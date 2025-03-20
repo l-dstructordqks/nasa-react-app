@@ -21,13 +21,14 @@
 #root {
   min-height: 100vh;
   display: flex;
-  display: relative;
+  position: relative;
 }
 
 .imgContainer {
   display: flex;
   flex-direction: column;
   max-height: 100vh;
+  width: 100%;
 }
 .bgImage {
   width: 100%;
@@ -43,7 +44,7 @@ footer {
   left: 0;
   width: 100%;
   display: flex;
-  
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
 }
@@ -68,12 +69,13 @@ footer button {
   color: white;
   padding: 1rem;
   transition-duration: 200ms;
+  cursor: pointer;
 }
 footer button i {
   font-size: 1.3rem;
 }
 footer button:hover {
-  opacity: .5;
+  opacity: .7;
 }
 
 .bgGradient {
@@ -106,7 +108,7 @@ footer button:hover {
   padding: 1rem;
   overflow-y: scroll;
   height: 100%;
-  width: 90%;
+  width: 80%;
   max-width: 800px;
   margin-left: auto;
   background: #030615;
@@ -171,5 +173,10 @@ footer button:hover {
   .sidebarContents {
     margin: unset;
     width: 100%;
+  }
+  .bgOverlay {
+    right: 0;
+    left: unset;
+    width: 100vw;
   }
 }
