@@ -24,7 +24,7 @@
   display: relative;
 }
 
-.imageContainer {
+.imgContainer {
   display: flex;
   flex-direction: column;
   max-height: 100vh;
